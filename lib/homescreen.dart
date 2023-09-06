@@ -6,7 +6,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Simple Project"),),
-      body: SafeArea(child: Column()),
+      body: SafeArea(child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(20git.0),
+            child: TextField(
+              decoration: InputDecoration(hintText: "Enter do you want to Search",border: OutlineInputBorder(borderRadius: BorderRadius.circular(15),),),
+            ),
+          ),
+          ElevatedButton(onPressed: (){}, child: Text("Search"),),
+        ],
+      )),
     );
   }
 }
